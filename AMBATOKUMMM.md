@@ -150,13 +150,13 @@ getgenv().Setting = {
                 },
             [ "X"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0,
-                    ["TimeToNextSkill"] = 0.3,
+                    ["HoldTime"] = 0.7,
+                    ["TimeToNextSkill"] = 0.1,
                 },
 
                 ["C"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0.8,
+                    ["HoldTime"] = 1.2,
                     ["TimeToNextSkill"] = 0.2,
                 },
             },
@@ -204,7 +204,7 @@ getgenv().Setting = {
                 },
                 ["X"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0.1,
+                    ["HoldTime"] = 0.8,
                     ["TimeToNextSkill"] = 0,
                 },
             },
@@ -219,7 +219,7 @@ getgenv().Setting = {
                     ["TimeToNextSkill"] = 0,
                 },
                 ["X"] = {
-                    ["Enable"] = false,
+                    ["Enable"] = true,
                     ["HoldTime"] = 0.1,
                     ["TimeToNextSkill"] = 0,
                 },
