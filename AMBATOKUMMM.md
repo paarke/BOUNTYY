@@ -1,7 +1,7 @@
---Config By Raizel (Superhuman/Godhuman + CDK/Anchor)
 if script_key then
 return
 end
+--Put Your Key Between ""
 script_key="bfVbKSfVzKQKemVyCNytHBJDDjzOxcfi";
 DelayTime = 300
 getgenv().FpsBoost = false
@@ -20,13 +20,13 @@ getgenv().Setting = {
     }, 
     ["Panel"] = false,
     ["FpsBoost"] = {
-        Enable = false,
+        Enable = true,
         Mode = "Lite",--Lite: Just Lower Graphics, Full: Completely Make All Objects Transparent
     },
-    ["Hide Theme"] = true,
+    ["Hide Theme"] = false,
     ["3D Render Disable"] = true,
     ["Theme"] = {
-        ["Name"] = "Raiden",--"Old", "Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
+        ["Name"] = "Old",--"Old", "Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
         ["Custom"] = {
             ["Enable"] = false,
             ['char_size'] = UDim2.new(0.668, 0, 1.158, 0),
@@ -57,8 +57,8 @@ getgenv().Setting = {
     },
     ["Auto Use Race V4"] = true, -- No Way you are turning this off
     ["Auto Dash If Mink V4"] = true,
-    ["Auto Dash If Ghoul V4"] = false,
-    ["Spam All Skill On Race Transform V4"] = true,
+    ["Auto Dash If Ghoul V4"] = true,
+    ["Spam All Skill On Race Transform V4"] = false,
     ["Failed To Load Data"] = {
         Rejoin = true,
         TimeToCheck = 30,
@@ -67,8 +67,8 @@ getgenv().Setting = {
         Enable = false,
         Words = { "Hacker", "Exploiter", "Scripter", "Script", "Hack"}
     },
-    AutoConfigMelee = false,
-    AutoConfigSword = false,
+    AutoConfigMelee = true,
+    AutoConfigSword = true,
     AutoConfigFruit = false,
     SwitchPlayerKeybind = "G", -- Except Y Keybind
     ["LimitServerHopTime"] ={ -- Only Hop After "Time" Seconds
@@ -77,7 +77,7 @@ getgenv().Setting = {
     },
     ["Position Config"] = {
         Mode = "Default",-- You Can Create Your Own Mode By Making An Index In The Table Like Custom
-        Tween = true, -- If false then it will teleport when near target
+        Tween = false, -- If false then it will teleport when near target
         SkyTween = false, -- Tweening In The Sky Till You Are Near The Player, Recommended For Using Gun Method
         Spin = false,
         ["Default"] = {
@@ -87,28 +87,28 @@ getgenv().Setting = {
         },
         ["Custom"] = {
             DistanceFromPlayer = {
-                x = 0, y = 2, z = 0
+                x = 0, y = 3, z = 0
             }
         }
     },
     ["ChatKill"] = {
         Enable = false,
         Chat = {
-            "CF By-Raizel","DM me for Configs","Config by Raizel"
+            "Config by BNgoc","I Got A Gaming Chair","I'm Just Too Good"
         },
     },
     ["Mention"] = {
-        ["Enable"] = false,
-        ["Id"] = "everyone", -- You Can Replace With Your Id (not your discord Name)
+        ["Enable"] = true,
+        ["Id"] = "", -- You Can Replace With Your Id (not your discord Name)
         ["EveryBounty"] = 10000,
     },
     ["FpsLock"] = {
-        ["Enable"] = false,
-        ["Cap"] = 45,
+        ["Enable"] = true,
+        ["Cap"] = 30,
     },
     ["LockBounty"] = {
         ["Enable"] = true,
-        ["Cap"] = 29600000,
+        ["Cap"] = 29400000,
         ["Action"] = "Kick", -- Kick, Shutdown
         ["SendMessage"] = true,
         ["Message"] = "Congratulation You Have Reached The Bounty Cap MyBounty 🔥 🔥 :fireworks: :fireworks: :fireworks:" -- It Will Replace MyBounty With Your Current Bounty, Add Ping Everyone If You Want
@@ -121,10 +121,10 @@ getgenv().Setting = {
     },
     ["Misc"] = {
         ["AutoBuyRandomandStoreFruit"] = true,
-        ["AutoBuySurprise"] = true,
+        ["AutoBuySurprise"] = false,
     },
-    ["Invisible"] = false, -- Self Explain
-    ["IgnoreFriends"] = true, --Server Hop When Your friends in your server
+    ["Invisible"] = true, -- Self Explain
+    ["IgnoreFriends"] = false, --Server Hop When Your friends in your server
     ["GunMethod"] = false, --Use Melee,Gun Will automaticly disable invisible for things
     ["GunMethodSetting"] = {
         LessSusKillTest=true,
@@ -145,19 +145,19 @@ getgenv().Setting = {
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0,
+                    ["HoldTime"] = 1.5,
                     ["TimeToNextSkill"] = 0,
                 },
             [ "X"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0.7,
-                    ["TimeToNextSkill"] = 0.1,
+                    ["HoldTime"] = 0,
+                    ["TimeToNextSkill"] = 0,
                 },
 
                 ["C"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 1.2,
-                    ["TimeToNextSkill"] = 0.2,
+                    ["HoldTime"] = 0,
+                    ["TimeToNextSkill"] = 0,
                 },
             },
         },
@@ -195,22 +195,6 @@ getgenv().Setting = {
         },
         ["Sword"] = {
             ["Enable"] = true,
-            ["Delay"] = 4,
-            ["Skills"] = {
-                ["Z"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0.5,
-                    ["TimeToNextSkill"] = 0.3,
-                },
-                ["X"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0.8,
-                    ["TimeToNextSkill"] = 0,
-                },
-            },
-        },
-        ["Gun"] = {
-            ["Enable"] = true,
             ["Delay"] = 0.5,
             ["Skills"] = {
                 ["Z"] = {
@@ -220,7 +204,23 @@ getgenv().Setting = {
                 },
                 ["X"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0.1,
+                    ["HoldTime"] = 0.2,
+                    ["TimeToNextSkill"] = 0,
+                },
+            },
+        },
+        ["Gun"] = {
+            ["Enable"] = false,
+            ["Delay"] = 2,
+            ["Skills"] = {
+                ["Z"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0,
+                    ["TimeToNextSkill"] = 0,
+                },
+                ["X"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0,
                     ["TimeToNextSkill"] = 0,
                 },
             },
